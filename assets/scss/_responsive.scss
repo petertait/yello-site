@@ -2,17 +2,23 @@
 	.image-block.feature-image-block{
 		& .image-inner{
 			height: 700px;
-			background-image: url(../images/feature-illy-lrg.svg)!important;
+			background-image: url(../images/feature-illy-med.svg);
 		}
 	}	
 }
 @media screen and (max-width: 1100px) {
-	.image-block.feature-image-block{
-		& .image-inner{
-			height: 700px;
-			background-image: url(../images/feature-illy-med.svg)!important;
-		}
+	.image-block.feature-image-block.hidden-phone{
+		display: none!important;
 	}	
+	.feature-phone-image-block.image-block.hidden-desktop{
+		height: 450px;
+		display: block!important;
+		background-color: #2bacf9;
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		z-index: -1;
+	}
 }
 /* ========= iPad Styles ========= */
 @media screen and (max-width: 1000px) {
@@ -49,9 +55,22 @@
 		background-repeat: no-repeat;
 		background-size: 100%;
 		z-index: -1;
+		
+		&.hidden-desktop{
+			display: none!important;
+		}
 	}
 	.dl-btn{
 		display: none;
+	}
+	.challenge-block{
+		.hidden-phone img{
+			margin-left: -100px;
+			margin-top: 50px;
+		}
+		.hidden-desktop{
+			display: none!important;
+		}
 	}
 }
 
@@ -76,15 +95,19 @@
 	}
 	.hidden-desktop{
 		display: block!important;
+		
+		&.image-block{
+			display: block!important;
+		}
 	}
 	body{
 		font-size: 0.875em;
 	}
 	h1, .h1 {
-	  font-size: 48px; 
+	  font-size: 36px; 
 	}
 	h2, .h2 {
-	  font-size: 24px;
+	  font-size: 22px;
 	}
 	h3, .h3 {
 	  font-size: 18px;
@@ -105,6 +128,10 @@
 	  margin-bottom: 10px;
 	  font-size: 16px;
 	}	
+	.btn, .content-block.intro-block .btn{
+		font-size: 20px;
+		padding: 15px 30px;
+	}
 	
 	// Image Blocks
 	.image-block {
@@ -174,4 +201,143 @@
 			margin: 0;
 		}
 	}
+	.feature-phone-image-block.image-block.hidden-desktop{
+		height: 300px;
+	}
+	
+	.gmap-block{
+		z-index: -1;
+	}
+	
+	
+	// .content-block
+	.content-block{
+		
+		& h2.subheadline{
+			font-size: 28px;
+		}
+		&.description-block p{
+			font-size: 18px;
+		}
+		&.intro-block{
+			padding-top: 30px;
+			padding-bottom: 50px;
+			
+			& .btn{
+				margin: 0 auto;
+			}	
+			
+			& .headlines{
+				margin-bottom: 30px;
+				
+				& h2.subheadline{
+					font-size: 20px;
+				}
+			}
+		}
+		
+		&.feature-block{
+			box-shadow: $drop-bottom-shadow;
+		
+			& .features-slider{
+				height: 400px;
+				
+				& button.slick-prev, & button.slick-next{
+					display: none!important;
+				}
+				& .slick-dots{
+					bottom: 20px;
+				}
+				
+				& .slide{
+
+					& h2{
+						display: none;
+					}
+					
+					&:before{
+						background-size: 110px!important;
+						background-position: center 75px!important;
+					}
+					&.banter-slide:before{
+						background-size: 155px!important;
+						background-position: center 65px!important;
+					}
+					&.challenge-slide:before{
+						background-size: 190px!important;
+						background-position: center 70px!important;
+					}
+					&.organise-slide:before{
+						background-size: 130px!important;
+						background-position: center 65px!important;
+					}
+					&.tour-slide:before{
+						background-size: 120px!important;
+						background-position: center 65px!important;
+					}
+					& h1{
+						padding-top: 230px;
+						font-size: 32px;
+					}
+					& .h3{
+						font-size: 16px;
+					}
+				}
+			}
+		}
+		
+		
+		&.description-block{
+			text-align: center;
+			
+			&.scan-block{
+				box-shadow: $drop-top-shadow;
+			}
+			
+			& .description{
+				padding-left: 0;
+				padding-right: 0;
+			}
+			& p{
+				margin-right: 0;
+			}
+			& .icon{
+				margin: 3px auto 40px;
+				display: table;
+			}
+			&.challenge-block .icon{
+				margin-top: 3px;
+			}
+			&.right-block .description{
+				padding-left: 0;
+				padding-right: 0;
+			}
+			& .img-container{
+				margin-top: 30px;
+			}
+			&.group-block .img-container{
+				padding: 0 30px;
+				margin-left: 0;
+				
+				&.viewed{
+					margin-left: 0!important;
+				}
+			}
+		}
+		
+		&.challenge-block{
+			& .hidden-desktop{
+				display: block!important;
+				padding-right: 0;
+				
+				& img{
+					margin-left: -100px;
+					margin-top: 0;
+				}
+			}
+		}
+		
+	}
+	// /.content-block
+	
 }

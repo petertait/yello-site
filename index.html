@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Yello</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
     
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     
@@ -34,16 +34,17 @@
 	    	<h1 class="logo">Yello</h1>
     	</div>
     </section>
-    <div class="hidden-tablet hidden-phone image-block feature-image-block">
-    	<span class="image-inner"></span>
-    </div>
-    <div class="hidden-desktop image-block" style="background-image:url(assets/images/feature-illy-sm.svg)"></div>
+    
+    <!-- Image Block -->
+    <div class="hidden-tablet hidden-phone image-block feature-image-block"><span class="image-inner"></span></div>
+    <div class="hidden-desktop image-block feature-phone-image-block" style="background-image:url(assets/images/feature-illy-sm.svg)"></div>
+    <!-- /Image Block -->
     
     <section class="content-block intro-block">
     	<div class="container">
     		<hgroup class="headlines">
 	    		<h1 class="headline">Engage and enjoy every school trip.</h1>
-	    		<h2 class="subheadline">Yello is educational app for students and teachers to help them organise and interact with high school trips.</h2>
+	    		<h2 class="subheadline">Yello is an educational app for students and teachers to help them organise and interact with high school trips.</h2>
     		</hgroup>
     		<button class="btn">Download Yello</button>
     		<!--<p class="h3">Forget clipboards and staying in pairs. Forget staring aimlessly at static exhibits. Quit dreading school trips and get ready to experience banter, oh and some learning...<p>
@@ -98,18 +99,104 @@
     	</div>
     </section>
         
-    <!--<div class="container">
-    	<div class="grid">
-    		<h1 class="unit span-grid">An Inspiring Blog Post all about organising
-    		Weddings and Events.</h1>
-    		<h3 class="unit span-grid">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</h3>
-    		<a href="#article-modal" class="btn btn-gold btn-modal">View Article</a>
+    <!-- Image Block -->
+    <div class="hidden-phone image-block map-image-block"><span class="image-inner" style="background-image:url(assets/images/organise-map.svg);"></span></div>
+    <div class="hidden-desktop image-block" style="background-image:url(assets/images/organise-map.svg);"></div>
+    <!-- /Image Block -->    
+    
+    <!-- Image Block -->
+    <!--<div class="gmap image-block hidden-phone">		
+    	<span class="image-inner"></span>
+    </div>	
+    <img src="http://maps.googleapis.com/maps/api/staticmap?center=51.502751,-0.126981&zoom=16&format=png&sensor=false&size=640x640&maptype=roadmap&style=feature:road.arterial|visibility:on|color:0xffffff&style=feature:road.arterial|visibility:on|color:0xfedf3d&style=feature:road.highway|visibility:on|color:0xfedf3d&style=feature:road.local|element:geometry|visibility:on|color:0xffffff&style=feature:landscape|visibility:on|color:0xe4eaf0&style=feature:water|visibility:on|color:0x7fc8ed&style=feature:road|element:labels|visibility:off&style=feature:poi.park|element:geometry.fill|visibility:on|color:0x82c828&style=feature:poi.park|element:labels|visibility:off&style=feature:landscape.man_made|element:geometry|visibility:off|weight:0.9&style=feature:road|element:geometry.stroke|weight:0.1|visibility:off&style=element:labels|visibility:off" alt="Natural History Museum" class="image-block gmap-block hidden-desktop">	-->
+    <!-- /Image Block -->   
+       
+    <!-- .scan-block --> 
+    <section class="content-block description-block scan-block img-wrap">
+    	<div class="container">
+    		<div class="grid">
+	    		<div class="unit description one-of-two notViewed animBlock" data-position="left" data-offset="250">
+	    			<span class="icon ss-searchbarcode"></span>
+	        		<h2 class="subheadline">School trips come alive through Yello's interactivity!</h2>
+	        		<p>Scan barcodes found on activities to open up immersive content within your Yello app! Explore media and news for that exhibit, or maybe put some headphones in and enjoy a tour guide.</p>
+	    		</div>
+	    		<div class="unit one-of-two notViewed animBlock img-container" data-position="right">
+	    			<img src="assets/images/screen-scan.png" alt="" class="pull-right">
+	    		</div>
+    		</div>
     	</div>
-    </div>-->
-
+    </section>
+	<!-- /.scan-block -->
+	
+	<!-- .group-block -->
+	<section class="content-block dark-block group-block description-block img-wrap center-block">
+		<div class="container">
+			<div class="grid">
+				<div class="unit description full-span notViewed animBlock" data-position="left" data-offset="250">
+					<span class="icon ss-usergroup"></span>
+					<h2 class="subheadline">Collaborate together in groups</h2>
+					<p>Placed in groups, students can compete in challenges against other groups on the trip. Group chats allow sharing of photos and encourage discussion.</p>
+					<p>Teachers have the ability to join in every group chat and allowing students to easily ask questions whenever!</p>
+				</div>
+				<div class="unit one-of-two notViewed animBlock img-container hidden-phone" data-position="left">
+					<img src="assets/images/screen-group.png" alt="">
+				</div>
+				<div class="unit one-of-two notViewed animBlock img-container" data-position="right" style="margin-left: -50px;">
+					<img src="assets/images/screen-group-2.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.group-block -->
+	
+	<!-- .challenge-block -->
+    <section class="content-block challenge-block description-block img-wrap right-block">
+    	<div class="container">
+    		<div class="grid">
+    			<div class="unit one-of-two notViewed animBlock img-container hidden-phone" data-position="left">
+    				<img src="assets/images/screen-challenge.png" alt="">
+    			</div>
+        		<div class="unit description one-of-two notViewed animBlock" data-position="right" data-offset="250">
+        			<span class="icon ss-checkclipboard"></span>
+            		<h2 class="subheadline">Learning doesn't have to be boring</h2>
+            		<p>Through Challenges, students are set tasks by Teachers within each activity. Each Challenge is worth points which go towards the end of trip leaderboards.</p>
+            		<p>Whether it be to take photos of 10 different spiders, this encourages the students to fully immerse themselves into that activity through exploration!</p>
+        		</div>
+        		<div class="unit one-of-two notViewed animBlock img-container hidden-desktop" data-position="left">
+        			<img src="assets/images/screen-scan.png" alt="">
+        		</div>
+    		</div>
+    	</div>
+    </section>
+	<!-- /.challenge-block -->
+	
+	<!-- .organise-block -->
+	<section class="content-block organise-block description-block img-wrap">
+		<div class="container">
+			<div class="grid">
+				<div class="unit description one-of-two notViewed animBlock" data-position="left" data-offset="250">
+					<span class="icon ss-clock"></span>
+					<h2 class="subheadline">Learning doesn't have to be boring</h2>
+					<p>Through Challenges, students are set tasks by Teachers within each activity. Each Challenge is worth points which go towards the end of trip leaderboards.</p>
+					<p>Whether it be to take photos of 10 different spiders, this encourages the students to fully immerse themselves into that activity through exploration!</p>
+				</div>
+				<div class="unit one-of-two notViewed animBlock img-container hidden-phone" data-position="right">
+					<img src="assets/images/screen-organise.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.organise-block -->
+	
+	<!-- .download-block -->
+	<section class="content-block download-block">
+	
+	</section>
+	<!-- /.download-block -->
 	
 	<script src="assets/fonts/pika/ss-pika.js"></script>
 	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/scrollview.js"></script>
 	<script src="assets/js/site.js"></script>
 	
     </body>
