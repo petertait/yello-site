@@ -1,5 +1,18 @@
-@media screen and (min-width 1500px){
-	
+@media screen and (max-width: 1400px) {
+	.image-block.feature-image-block{
+		& .image-inner{
+			height: 700px;
+			background-image: url(../images/feature-illy-lrg.svg)!important;
+		}
+	}	
+}
+@media screen and (max-width: 1100px) {
+	.image-block.feature-image-block{
+		& .image-inner{
+			height: 700px;
+			background-image: url(../images/feature-illy-med.svg)!important;
+		}
+	}	
 }
 /* ========= iPad Styles ========= */
 @media screen and (max-width: 1000px) {
