@@ -450,6 +450,7 @@ a{
 		position: absolute;
 		top: 40px;
 		height: 100%;
+		z-index: 2;
 		& .cloud {
 			width: 100px; height: 150px;
 			background-size: contain;
@@ -516,10 +517,10 @@ a{
 // .headlines
 .headlines{
 	text-align: center;
-	margin: 30px auto 50px;
+	margin: 10px auto 50px;
 	
 	& .headline{
-		
+		line-height: 1;
 	}
 	& .subheadline{
 		font-weight: 400;
@@ -534,9 +535,13 @@ a{
 	
 	&.intro-block{
 		box-shadow: $drop-top-shadow, $drop-bottom-shadow;
+		background-color: white;
+		background-image: linear-gradient(rgba(255,255,255,0), white), repeating-linear-gradient(-45deg,rgba(212,221,231,.11), rgba(212,221,231,.11) 6px, transparent 6px, transparent 12px);
+		border-top: 2px solid white;
 		
 		& .headline{
 			color: $purple;
+			margin-bottom: 20px;
 		}
 		& .btn{
 			display: table;

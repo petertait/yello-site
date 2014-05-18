@@ -1,3 +1,6 @@
+@media screen and (min-width 1500px){
+	
+}
 /* ========= iPad Styles ========= */
 @media screen and (max-width: 1000px) {
 	/* ======== Base Styles ======== */
@@ -10,36 +13,33 @@
 	.hidden-desktop{
 		display: block!important;
 	}
-	.image-block {
-		width: 100%;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-		position: relative;
-	}
 	
 	/* ======== Modals ======== */
 	.modal{
 		top: 5%;
 	}
 	.feature{
-		background-color: #2bacf9;
-		z-index: -1;
+		height: 450px;
+		
+		z-index: 1;
 		
 		& .logo{
-			height: 90px;
+			height: 120px;
 			top: 0px;
-			background-size: 120px;
+			background-size: 150px;
 		}
+	}
+	.image-block{
+		height: 450px;
+		background-color: #2bacf9;
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		z-index: -1;
 	}
 	.dl-btn{
 		display: none;
 	}
-	
-	
 }
 
 /* ========= Phone Styles ========= */
@@ -63,6 +63,34 @@
 	}
 	.hidden-desktop{
 		display: block!important;
+	}
+	body{
+		font-size: 0.875em;
+	}
+	h1, .h1 {
+	  font-size: 48px; 
+	}
+	h2, .h2 {
+	  font-size: 24px;
+	}
+	h3, .h3 {
+	  font-size: 18px;
+	}
+	h4, .h4 {
+	  font-size: 16px;
+	}
+	h5, .h5 {
+	  margin-top: 20px;
+	  font-size: 14px;
+	}
+	h6, .h6 {
+	  margin-top: 20px;
+	  font-size: 12px;
+	}
+	p {
+	  margin-top: 0;
+	  margin-bottom: 10px;
+	  font-size: 16px;
 	}	
 	
 	// Image Blocks
@@ -76,6 +104,10 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		position: relative;
+	}
+	.cloud-wrap{
+		z-index: 5;
+		display: none;
 	}
 	
 	
@@ -124,8 +156,8 @@
 	}
 	.feature{
 		& .logo{
-			height: 90px;
-			background-size: 90px;
+			height: 80px;
+			background-size: 120px;
 			margin: 0;
 		}
 	}
