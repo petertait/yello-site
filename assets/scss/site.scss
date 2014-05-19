@@ -605,6 +605,10 @@ a{
 			margin: 20px auto 15px;
 			padding: 22px 50px;
 			background-color: $purple;
+			
+			&.hidden-desktop.hidden-tablet{
+				display: none!important;
+			}
 		}
 	}
 	// /.intro-block

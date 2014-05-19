@@ -343,27 +343,28 @@
 					
 					&:before{
 						background-size: 110px!important;
-						background-position: center 75px!important;
+						background-position: center 50px!important;
 					}
 					&.banter-slide:before{
 						background-size: 155px!important;
-						background-position: center 65px!important;
+						background-position: center 40px!important;
 					}
 					&.challenge-slide:before{
 						background-size: 190px!important;
-						background-position: center 70px!important;
+						background-position: center 40px!important;
 					}
 					&.organise-slide:before{
 						background-size: 130px!important;
-						background-position: center 65px!important;
+						background-position: center 35px!important;
 					}
 					&.tour-slide:before{
 						background-size: 120px!important;
-						background-position: center 65px!important;
+						background-position: center 30px!important;
 					}
 					& h1{
-						padding-top: 230px;
+						padding-top: 190px;
 						font-size: 32px;
+						line-height: 1;
 					}
 					& .h3{
 						font-size: 18px;
