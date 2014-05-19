@@ -1,9 +1,9 @@
-# Yello – Product Website
+# Yello – Product Website
 
-Product site for the Yello iPhone App
+### Product site for the Yello iPhone App
 
---
+---
 
-## View live at:
+#### View live at:
 
       http://yello.so
