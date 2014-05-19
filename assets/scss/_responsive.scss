@@ -343,7 +343,14 @@
 				margin: 30px auto 55px;
 				padding: 0;
 			}
+			& .img-container.hidden-desktop.hidden-tablet{
+				display: block!important;
+			}
+			& .img-container.hidden-phone{
+				display: none!important;
+			}
 		}
+		
 		
 	}
 	// /.content-block

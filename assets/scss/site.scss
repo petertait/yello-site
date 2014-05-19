@@ -861,6 +861,9 @@ a{
 				display: block;
 			}
 		}
+		& .img-container.hidden-desktop.hidden-tablet{
+			display: none!important;
+		}
 		
 	}
 	// /.organise-block
