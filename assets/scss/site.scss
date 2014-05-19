@@ -383,6 +383,7 @@ a{
 }
 // /.btn
 
+// .logo
 .logo{
 	@include hide-text; 
 	-webkit-animation: pulse 3s infinite;
@@ -391,6 +392,8 @@ a{
 	background-size: 100%;
 	display: block;
 }
+// /.logo
+
 // .image-block
 .image-block{
 	height: 450px;
@@ -463,9 +466,6 @@ a{
 	border-top: 1px solid #2bacf9;
 	padding-top: 20px;
 
-	& .container{
-		//background-color: #2292da;
-	}
 	& .logo{
 		width: 100%;
 		height: 180px;
@@ -945,6 +945,174 @@ a{
 	background-image: url("http://maps.googleapis.com/maps/api/staticmap?center=51.502751,-0.126981&zoom=15&format=png&sensor=false&size=640x640&maptype=roadmap&style=feature:road.arterial|visibility:on|color:0xffffff&style=feature:road.arterial|visibility:on|color:0xfedf3d&style=feature:road.highway|visibility:on|color:0xfedf3d&style=feature:road.local|element:geometry|visibility:on|color:0xffffff&style=feature:landscape|visibility:on|color:0xe4eaf0&style=feature:water|visibility:on|color:0x7fc8ed&style=feature:road|element:labels|visibility:off&style=feature:poi.park|element:geometry.fill|visibility:on|color:0x82c828&style=feature:poi.park|element:labels|visibility:off&style=feature:landscape.man_made|element:geometry|visibility:off|weight:0.9&style=feature:road|element:geometry.stroke|weight:0.1|visibility:off&style=element:labels|visibility:off&scale=2");
 }
 // / Google Map
+
+
+// Modal
+.md-perspective,
+.md-perspective body {
+	height: 100%;
+	overflow: hidden;
+}
+
+.md-perspective body  {
+	background: #222;
+	-webkit-perspective: 600px;
+	-moz-perspective: 600px;
+	perspective: 600px;
+}
+
+.md-container {
+	background: #e74c3c;
+	min-height: 100%;
+}
+
+.md-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	max-width: 1000px;
+	min-width: 320px;
+	height: auto;
+	z-index: 2000;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.md-show {
+	visibility: visible;
+}
+
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: rgba(200,212,223,0.9);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Content styles */
+.md-content {
+	color: #fff;
+	background: $purple;
+	border-radius: 10px;
+	position: relative;
+	margin: 0 auto;
+	box-shadow: 0 0 15px rgba(62,78,90,0.3), 0 5px 0 rgba(62,78,90,0.15);
+	text-align: center;
+	
+	& a{
+		margin-left: 30px;
+		padding-bottom: 3px;
+		
+		&:hover{
+			border-bottom: 1px solid lighten($purple, 30%);
+		}
+	}
+	& .iphone-dl{
+		border-radius: 8px;
+		background-color: $purple;
+	}
+	& .dl-list{
+		
+		& li{
+			background-color: white;
+			box-shadow: 0 3px 0 rgba(0,0,0,0.2);
+			border-radius: 5px;
+			margin-bottom: 10px;
+			text-align: center;
+			padding: 20px;
+		}
+	}
+	&.qr{
+		@include hide-text;
+		background-image: url(../images/qr-wh.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		width: 100px;
+		height: 100px;
+		display: table;
+		margin: 10px auto;
+	}
+}
+
+.md-content h3 {
+	margin: 0;
+	padding: 0.4em;
+	text-align: center;
+	font-size: 2.4em;
+	font-weight: 300;
+	opacity: 0.8;
+	background: rgba(0,0,0,0.1);
+	border-radius: 3px 3px 0 0;
+}
+
+.md-content > div {
+	padding: 15px ;
+	margin: 0;
+	font-weight: 300;
+	font-size: 1.15em;
+}
+
+.md-content > div p {
+	margin: 0;
+	padding: 10px 0;
+}
+
+.md-content > div ul {
+	margin: 0;
+	padding: 0 0 30px 20px;
+}
+
+.md-content > div ul li {
+	padding: 5px 0;
+}
+
+.md-content button {
+	display: block;
+	margin: 0 auto;
+	font-size: 0.8em;
+}
+
+/* Individual modal styles with animations/transitions */
+
+/* Effect 1: Fade in and scale up */
+.download-modal .md-content {
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transform: scale(0.7);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show.download-modal .md-content {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
 
 // Slider
 .slick-slider {

@@ -18,6 +18,8 @@
 		background-repeat: no-repeat;
 		background-size: 100%;
 		z-index: -1;
+		-webkit-animation: pulse-large 12s infinite;
+		-animation: pulse-large 12s infinite;
 	}
 }
 /* ========= iPad Styles ========= */
