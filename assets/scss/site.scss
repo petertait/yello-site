@@ -386,6 +386,7 @@ a{
 // .logo
 .logo{
 	@include hide-text; 
+	-moz-animation: pulse 3s infinite;
 	-webkit-animation: pulse 3s infinite;
 	-animation: pulse 3s infinite;
 	background: url(../images/logo-wh.svg) no-repeat center;
@@ -416,6 +417,7 @@ a{
 		
 		& .image-inner{
 			box-shadow: none;
+			-moz-animation: pulse-large 12s infinite;
 			-webkit-animation: pulse-large 12s infinite;
 			-animation: pulse-large 12s infinite;
 		}
@@ -430,6 +432,7 @@ a{
 			background-image: url(../images/feature-illy-lrg.svg);
 			-webkit-animation: pulse 10s infinite;
 			-animation: pulse 10s infinite;
+			-moz-animation: pulse-large 12s infinite;
 			-webkit-animation: pulse-large 12s infinite;
 			-animation: pulse-large 12s infinite;
 			box-shadow: none;
@@ -442,7 +445,7 @@ a{
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		background-attachment: fixed;
+		background-attachment: scroll;
 		margin: 0;
 		position: absolute;
 		top: 0;
@@ -636,6 +639,7 @@ a{
 					background-position: center 170px;
 					background-size: 175px;
 					background-repeat: no-repeat;
+					-moz-animation: pulse 2s infinite;
 					-webkit-animation: pulse 2s infinite;
 					-animation: pulse 2s infinite;
 				}
@@ -889,6 +893,10 @@ a{
 			padding-left: 40px;
 			padding-right: 40px;
 			//border: 3px solid $purple;
+			
+			&.hidden-desktop.hidden-tablet{
+				display: none!important;
+			}
 		}
 		& .register-btn{
 			//border: 3px solid $gray-med;
@@ -1098,6 +1106,9 @@ a{
 			& strong{
 				color: $purple;
 			}
+		}
+		& img{
+			border-radius: 5px 5px 0 0;
 		}
 	}
 }

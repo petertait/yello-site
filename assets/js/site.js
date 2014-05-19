@@ -10,6 +10,14 @@ $(function() {
 	    slidesToScroll: 1
 	});
 	
+	// Add Class for Safari
+	// Display Incompatible Modal
+	if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Mac') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+	    $('body').addClass('safari-mac');
+	}else {
+	    $('body').addClass('not-safari');
+	}
+	
 	// Modal
 	var ModalEffects = (function() {
 	
