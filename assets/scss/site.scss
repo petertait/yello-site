@@ -368,6 +368,7 @@ a{
     	position: relative;
     	//box-shadow: 0 1px 0 0 rgba(27,108,155,0.6);
     	position: fixed;
+    	display: none;
     	
     	&:hover{
     		background-color: white;
@@ -870,20 +871,41 @@ a{
 	
 	// .download-block
 	&.download-block{
-		height: 500px;
 		box-shadow: 0 -10px 0 rgba(122,143,165,0.3);
 		position: relative;
 		z-index: 2;
+		text-align: center;
+		padding: 100px 0;
+		
+		& h2{
+			text-align: center;
+			max-width: 700px;
+			margin: 0 auto 40px;
+			display: table;
+			color: $purple;
+		}
+		& .btn{
+			margin: 5px 5px 10px;
+			//border: 3px solid $purple;
+		}
+		& .register-btn{
+			//border: 3px solid $gray-med;
+			background-color: #e4eaf0;
+			color: lighten($gray-med, 20%);
+			padding-left: 30px;
+			padding-right: 30px;
+			text-shadow: none;
+		}
 		
 	}
 	// /.download-block
+	
 	
 	&.img-wrap{
 		overflow: hidden;
 		
 		& .img-container{
-		overflow: visible;
-		
+			overflow: visible;
 		}
 		
 		& img{
@@ -894,6 +916,28 @@ a{
 }
 // /.content-block
 
+// .main-footer
+.main-footer{
+	background-color: #f2f6fa;
+	padding: 20px 0;
+	font-size: 14px;
+	color: lighten($gray-med, 35%);
+	
+	& nav{
+		display: inline-block;
+		text-align: right;
+		
+		& a{
+			margin-left: 30px;
+			padding-bottom: 3px;
+			
+			&:hover{
+				border-bottom: 1px solid lighten($purple, 30%);
+			}
+		}
+	}
+}
+// /.main-footer
 
 // Google map
 // .gmap
