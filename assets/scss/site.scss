@@ -600,11 +600,18 @@ a{
 			color: $purple;
 			margin-bottom: 20px;
 		}
-		& .btn{
+		& .intro-btn-wrap{
+			margin: 0 auto;
 			display: table;
-			margin: 20px auto 15px;
+		}
+		& .btn{
+			display: inline-block;
+			margin: 20px 10px 15px;
 			padding: 22px 50px;
-			background-color: $purple;
+			
+			padding-left: 30px;
+			padding-right: 30px;
+			font-size: 20px;
 			
 			&.hidden-desktop.hidden-tablet{
 				display: none!important;
@@ -877,9 +884,38 @@ a{
 	}
 	// /.organise-block
 	
+	// .teacher-block
+	&.teacher-block{
+		box-shadow: inset 0 10px 0 rgba(25,130,156,0.5), inset 0 -10px 0 rgba(25,130,156,0.5);
+		border-top: 1px solid #f9f9f9;
+		border-bottom: 1px solid #fff;
+		background-color: $blue;
+		background-image: linear-gradient(rgba(37,184,220,0), $blue), $striped-light;	
+		color: white;
+		
+		& .icon{
+			background-color: $red;
+			padding-top: 11px;
+			margin-top: 50px;
+		}
+		& .subheadline{
+			text-shadow: 1px 2px 0 rgba(0,0,0,0.2);	
+		}
+		& p{
+			color: rgba(255,255,255,0.8);
+			margin-right: 0;
+		}
+		& .description{
+			padding-left: 40px!important;
+			padding-right: 0;
+		}
+	}
+	// /.teacher-block
+	
 	// .download-block
 	&.download-block{
 		box-shadow: 0 -10px 0 rgba(122,143,165,0.3);
+		background-image: linear-gradient(rgba(255,255,255,0), white), repeating-linear-gradient(-45deg,rgba(212,221,231,.11), rgba(212,221,231,.11) 6px, transparent 6px, transparent 12px);
 		position: relative;
 		z-index: 2;
 		text-align: center;
@@ -894,8 +930,9 @@ a{
 		}
 		& .btn{
 			margin: 5px 5px 10px;
-			padding-left: 40px;
-			padding-right: 40px;
+			padding-left: 30px;
+			padding-right: 30px;
+			font-size: 20px;
 			//border: 3px solid $purple;
 			
 			&.hidden-desktop.hidden-tablet{
@@ -1024,9 +1061,12 @@ a{
 }
 
 /* Content styles */
+.download-teacher-modal .md-content{
+	background: $purple;
+}
 .md-content {
 	color: #fff;
-	background: $purple;
+	background: $blue;
 	border-radius: 10px;
 	position: relative;
 	margin: 0 auto;
@@ -1052,23 +1092,25 @@ a{
 		right: -18px;
 		top: 5px;
 		color: darken($purple, 15%);
+		color: rgba(0,0,0,0.3);
 		font-size: 24px;
 		z-index: 5;
 		
 		&:hover{
 			color: darken($purple, 30%);
+			color: rgba(0,0,0,0.5);
 		}
 	}
 	& .mac-link{
 		color: white;
-		background: darken($purple, 5%);
+		background: rgba(0,0,0,0.2);
 		padding: 20px 50px 18px;
 		border-radius: 10px;
-		margin: 0 auto;
-		display: table;
+		width: 95%;
+		margin-left: 5%;
 		
 		&:hover{
-			background: darken($purple, 10%);
+			background: rgba(0,0,0,0.3);
 		}
 	}
 
@@ -1096,9 +1138,12 @@ a{
 			box-shadow: 0 0 7px rgba(0,0,0,0.3), 0 4px 0 rgba(0,0,0,0.2);		
 		}
 		& .qr{
-			background-color: $blue;
+			background-color: $purple;
 			padding: 10%;
 			width: 100%;
+		}
+		.download-teacher-modal & .qr{
+			background-color: $blue;
 		}
 		& h4{
 			width: 70%;

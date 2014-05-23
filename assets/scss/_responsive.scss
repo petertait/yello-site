@@ -122,8 +122,7 @@
 	}
 	.dl-btn{
 		display: none;
-	}
-	
+	}	
 	.challenge-block{
 		.hidden-phone img{
 			margin-left: -100px;
@@ -198,6 +197,12 @@
 	.btn, .content-block.intro-block .btn{
 		font-size: 20px;
 		padding: 15px 30px;
+	}
+	.content-block.intro-block a.btn.hidden-desktop.hidden-tablet{
+		display: table!important;
+	}
+	.md-modal, .md-overlay{
+		display: none;
 	}
 	
 	// Image Blocks
@@ -310,7 +315,7 @@
 			padding-bottom: 50px;
 			
 			& .btn{
-				margin: 0 auto;
+				margin: 10px auto;
 			}	
 			
 			& .headlines{
@@ -437,9 +442,20 @@
 				display: none!important;
 			}
 		}
+		&.teacher-block{
+			& img{
+				margin: -30px auto 30px;
+				position: relative;
+			}
+			& .description{
+				margin-left: 0!important;
+				padding-left: 0!important;
+			}
+			
+		}
 		&.download-block{
 			
-			.btn.purple-btn.hidden-desktop.hidden-tablet{
+			.btn.purple-btn.hidden-desktop.hidden-tablet, .btn.blue-btn.hidden-desktop.hidden-tablet{
 				display: table!important;
 				margin: 10px auto 0;
 			}

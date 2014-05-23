@@ -46,8 +46,13 @@
 	    		<h1 class="headline">Engage and enjoy every school trip.</h1>
 	    		<h2 class="subheadline">Yello is an educational app for students and teachers to help them organise and interact with high school trips.</h2>
     		</hgroup>
-    		<button class="btn purple-btn md-trigger hidden-phone" data-modal="dl-modal">Download Yello</button>
-    		<a href="http://yello.so/app" target="_blank" class="btn purple-btn hidden-desktop hidden-tablet">Download Yello</a>
+    		<div class="intro-btn-wrap">
+	    		<button class="btn blue-btn md-trigger hidden-phone" data-modal="dl-teacher-modal">Download Yello Teacher</button>
+	    		<button class="btn purple-btn md-trigger hidden-phone" data-modal="dl-modal">Download Yello</button>
+	    		
+	    		<a href="http://yello.so/student" target="_blank" class="btn purple-btn hidden-desktop hidden-tablet">Download Yello</a>
+	    		<a href="http://yello.so/teacher" target="_blank" class="btn blue-btn hidden-desktop hidden-tablet">Download Yello Teacher</a>
+	    	</div>
     		<!--<p class="h3">Forget clipboards and staying in pairs. Forget staring aimlessly at static exhibits. Quit dreading school trips and get ready to experience banter, oh and some learning...<p>
     		<p class="h3">Get use to engagement with school activities and with your friends!</p>-->
     	</div>
@@ -190,13 +195,34 @@
 	</section>
 	<!-- /.organise-block -->
 	
+	<!-- .teacher-block -->
+	<section class="content-block teacher-block description-block img-wrap right-block">
+		<div class="container">
+			<div class="grid">
+				<div class="unit one-of-two notViewed animBlock img-container" data-position="right">
+					<img src="assets/images/screen-teacher-1.png" alt="" class="pull-right">
+				</div>
+				<div class="unit description one-of-two notViewed animBlock" data-position="left" data-offset="250">
+					<span class="icon ss-femaleuser"></span>
+					<h2 class="subheadline">Teachers get their own app. Organise before and during school trips.</h2>
+					<p>Teachers can create school trips by adding activities which are filled with automated content ready for students to explore.</p> 
+					<p>Adding challenges is easy; add the points value and tasks that students can aim to complete. Sit back and watch students try and challenge each other by engaging further within the school trip!</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.teacher-block -->
+	
 	<!-- .download-block -->
 	<section class="content-block download-block">
 		<div class="container">
 			<h2 class="subheadline">Download Yello today and start enjoying your school trips again!</h2>
-			<button class="btn register-btn">Sign me up!</button>
+			<!--<button class="btn register-btn">Sign me up!</button><br>-->
+			<button class="btn blue-btn md-trigger hidden-phone" data-modal="dl-teacher-modal">Download Yello Teacher</button>
 			<button class="btn purple-btn md-trigger hidden-phone" data-modal="dl-modal">Download Yello</button>
-			<a href="http://yello.so/app" target="_blank" class="btn purple-btn hidden-desktop hidden-tablet">Download Yello</a>
+			
+			<a href="http://yello.so/student" target="_blank" class="btn purple-btn hidden-desktop hidden-tablet">Download Yello</a>
+			<a href="http://yello.so/teacher" target="_blank" class="btn blue-btn hidden-desktop hidden-tablet">Download Yello Teacher</a>
 		</div>
 	</section>
 	<!-- /.download-block -->
@@ -222,15 +248,40 @@
 					<a class="md-close ss-delete"></a>
 					<h2>Installing Yello</h2>
 					<p>Designed specifically for iOS 7, installing is simple. Your choices are:</p>
-					<a href="http://yello.so/app" title="View the Yello iPhone app" target="_BLANK" class="unit one-of-two">
+					<a href="http://yello.so/student" title="View the Yello iPhone app" target="_BLANK" class="unit one-of-two">
 						<img src="assets/images/app-icon.svg" alt="" class="app-icon">
-						<h4>Visit <strong>http://yello.so/app</strong> on your iPhone's Safari.</h4>
+						<h4>Visit <strong>http://yello.so/student</strong> on your iPhone's Safari.</h4>
 					</a>
-					<a href="http://yello.so/app" title="View the Yello iPhone app" target="_BLANK" class="unit one-of-two">
+					<a href="http://yello.so/student" title="View the Yello iPhone app" target="_BLANK" class="unit one-of-two">
 						<img src="assets/images/qr-wh.svg" alt="" class="qr">
 						<h4>Scan this code with your iPhone.</h4>
 					</a>
-					<a href="http://yello.so/app" title="Yello on Safari" class="mac-link">Alternatively, visit <strong>http://yello.so/app</strong> in Safari for Mac</a>
+					<a href="http://yello.so/student" title="Yello on Safari" class="mac-link unit span-grid" target="_BLANK">Alternatively, visit <strong>http://yello.so/student</strong> in Safari for Mac</a>
+				</div>
+				<!--<button class="md-close btn"> Close me!</button>-->
+			</div>
+		</div>
+	</div>
+	<div class="md-overlay"></div>
+	<!-- /,download-modal -->
+	
+	<!-- .download-modal -->
+	<div class="md-modal md-effect-1 download-modal download-teacher-modal" id="dl-teacher-modal">
+		<div class="md-content">
+			<div class="container">
+				<div class="grid">
+					<a class="md-close ss-delete"></a>
+					<h2>Installing Yello Teacher</h2>
+					<p>Designed specifically for iOS 7, installing is simple. Your choices are:</p>
+					<a href="http://yello.so/teacher" title="View the Yello iPhone app" target="_BLANK" class="unit one-of-two">
+						<img src="assets/images/teacher-icon.svg" alt="" class="app-icon">
+						<h4>Visit <strong>http://yello.so/teacher</strong> on your iPhone's Safari.</h4>
+					</a>
+					<a href="http://yello.so/teacher" title="View the Yello iPhone app" target="_BLANK" class="unit one-of-two">
+						<img src="assets/images/qr-teacher-wh.svg" alt="" class="qr">
+						<h4>Scan this code with your iPhone.</h4>
+					</a>
+					<a href="http://yello.so/teacher" title="Yello on Safari" class="mac-link unit span-grid" target="_BLANK">Alternatively, visit <strong>http://yello.so/teacher</strong> in Safari for Mac</a>
 				</div>
 				<!--<button class="md-close btn"> Close me!</button>-->
 			</div>
